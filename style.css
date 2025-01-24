@@ -17,6 +17,12 @@ a{
     text-decoration: none;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
 input,button{
     outline: none;
     font-family: var(--body-font);
@@ -85,6 +91,8 @@ h1, h2, h3{
     font-weight: var(--font-semi-bold);
 }
 
+
+
 /* Responsive typography */
 @media screen and (min-width: 1024px) {
 :root {
@@ -106,10 +114,13 @@ h1, h2, h3{
     margin-right: 1.5rem;
 }
 
-.grid{
+.section {
     padding: 4.5rem 0 2rem;
 }
-
+  
+.grid{
+    display: grid;
+}
 .section__title{
     font-size: var(--h2-font-size);
     margin-bottom: 1rem;
@@ -148,6 +159,7 @@ h1, h2, h3{
     transition: .3s;
     align-items: center;
     column-gap: .25rem;
+    color: #fff;
     font-weight: var(--font-medium);
 }
 
@@ -194,4 +206,128 @@ h1, h2, h3{
     .nav__link i{
         font-size: 1.25rem;
     }
+}
+
+/*=============== Home ===============*/
+.home{
+    background: linear-gradient(170deg, 
+/*Hue (0) | Saturation (0%) | Lightness (22%) */        /*0% و 30%: تحدد مكان كل لون في التدرج. */
+    hsl(0, 0%, 22%) 0%,  /* Dark gray starting from tp */
+    hsl(0, 0%, 6%)30%); /*Darker color spreads up to 30% of the screen */
+    padding-bottom: 0;
+}
+
+.home__container{
+    padding-top: 4rem;
+    row-gap: 3.5rem;
+}
+
+.home__title,
+.home__value-number{
+    color: #fff;
+}
+.home__title{
+    font-size: var(--biggest-font-size);
+    line-height: 120%;
+    margin-bottom: 1.25rem;
+}
+
+.home_descraption{
+    color: var(--text-color-light);
+    margin-bottom: 2rem;
+}
+
+.home__search{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding: .35rem .35rem .35rem .5rem;
+    border: 3px solid var(--text-color-light);
+    background-color: var(--body-color);
+    border-radius: .75rem;
+    margin-bottom: 2rem;
+}
+
+.home__search i{
+    padding-right: .8rem;
+    font-size: 1.25rem;
+    color: var(--first-color);
+}
+.home__search-input{
+    width: 90%;
+    background-color: var(--body-color);
+    color: var(--text-color);
+    margin: 0 .5em;
+}
+.home__search-input::placeholder{
+    color: var(--text-color-light);
+}
+.home__value{
+    display: flex;
+    column-gap: 2.5rem;
+}
+
+.home__value-number{
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-medium)
+}
+
+.home__value-number span{
+    color: var(--second-color)
+}
+.home__value-descraption{
+    color: var(--text-color-light);
+    font-size: var(--smaller-font-size);
+}
+
+.home__images{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.home__orbe{
+    width: 256px;
+    height: 284px;
+    background: linear-gradient(180deg, 
+    hsl(0, 0%, 16%)93%,
+    hsl(0, 0%, 67%)100%);
+    border-radius: 135px 135px 0 0;
+}
+.home__img{
+    position: absolute;
+    width: 250px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 125px 125px 12px 12px;
+    display: inline-flex;
+    align-items: flex-end;
+    bottom: -1.5rem;
+    box-shadow: 0 16px 32px
+    hsl(228, 66%, 25%, .25);
+
+}
+
+.button{
+    display: inline-block;
+    color: #fff;
+    padding: 10px 20px;
+    background:linear-gradient(101deg,
+    hsl(228, 66%, 50%),
+    hsl(228, 66%, 47%));
+    border-radius: .5rem;
+    transition: .3s;
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    box-shadow: 0 4px 8px 
+    hsl(228, 66%, 45%, .25);
+    cursor: pointer;
+}
+
+.button:hover{
+    box-shadow: 0 4px 12px 
+    hsl(228, 66%, 45%, .25);
+}
+.nav__button{
+    display: none;
 }
