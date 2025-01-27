@@ -74,6 +74,7 @@ input,button{
     /*========== z index ==========*/
     --z-tooltip: 10;
     --z-fixed: 100;
+    --section-padding:2.5rem;
 }
 
 
@@ -146,6 +147,12 @@ h1, h2, h3{
     background-color: transparent;
     transition: .5s;
 }
+
+/*======== Change Background Color Header==========  */
+.scroll-header{
+    background-color: var(--body-color);
+    box-shadow: 0 1px 4px hsl(228, 4%, 15%, .1);
+}
 /*=============== NAV ===============*/
 .nav{
     display: flex;
@@ -161,6 +168,11 @@ h1, h2, h3{
     column-gap: .25rem;
     color: #fff;
     font-weight: var(--font-medium);
+}
+
+/* change text color header  */
+.scroll-header .nav__logo{
+    color: var(--first-color);
 }
 
 .nav__lago i{
@@ -205,6 +217,10 @@ h1, h2, h3{
     }
     .nav__link i{
         font-size: 1.25rem;
+    }
+    /* dispaly span text */
+    .nav__link span{
+        display: none;
     }
 }
 
@@ -325,9 +341,28 @@ h1, h2, h3{
 }
 
 .button:hover{
-    box-shadow: 0 4px 12px 
+    box-shadow: 0 4px 12px hsl(228, 66%, 45%, .25)
     hsl(228, 66%, 45%, .25);
 }
 .nav__button{
     display: none;
+}
+
+/*=============== Section Partners ============ */
+.logos__container{
+    padding-top:var(--section-padding);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.logos__img img{
+    height: 60px;
+    opacity: .3;
+    transition:.3s; 
+}
+
+.logos__img img:hover{
+    opacity: 1;
 }
