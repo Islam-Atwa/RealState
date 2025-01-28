@@ -1,9 +1,9 @@
 
 //=========== Change background color Header ===========//
 
-const header = document.querySelector('header');
-function changeBacgroundColorHeader(){
-    if(this.scrollY >= 150)header.classList.add('scroll-header');
-    if (this.scrollY <= 150)header.classList.remove('scroll-header');
+const nav = document.querySelector('header');
+function changeBacgroundColorNavbar(){
+    if(this.scrollY >= 150)header.classList.add('scroll-nav');
+    if (this.scrollY <= 150)header.classList.remove('scroll-nav');
 }
-window.addEventListener('scroll', changeBacgroundColorHeader);
+window.addEventListener('scroll', changeBacgroundColorNavbar);

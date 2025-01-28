@@ -149,7 +149,7 @@ h1, h2, h3{
 }
 
 /*======== Change Background Color Header==========  */
-.scroll-header{
+.scroll-nav{
     background-color: var(--body-color);
     box-shadow: 0 1px 4px hsl(228, 4%, 15%, .1);
 }
@@ -171,7 +171,7 @@ h1, h2, h3{
 }
 
 /* change text color header  */
-.scroll-header .nav__logo{
+.scroll-nav .nav__logo{
     color: var(--first-color);
 }
 
@@ -365,4 +365,43 @@ h1, h2, h3{
 
 .logos__img img:hover{
     opacity: 1;
+}
+
+/*============== popular container ===========*/
+.popular__container{
+    padding: 1rem 0 5rem;
+}
+.popular__card{
+    width: 290px;
+    background-color: var(--container-color);
+    padding: .5rem .5rem 1.5rem;
+    border-radius: 1rem;
+    /* box-shadow: 0 8px 25px hsl(228, 66%, 45%, .15); */
+    transition: .3s;
+    margin: 0 auto;
+}
+.popular__card:hover{
+    box-shadow: 0 8px 25px hsl(228, 66%, 45%, .25);
+}
+.popular__img{
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+.popular__content{
+    padding: 0 1rem 0 .5rem;
+}
+.popular__price{
+    font-size: var(--h2-font-size);
+    color: var(--text-color);
+    margin-bottom: 0.25rem;
+}
+.popular__price span{
+    color: var(--second-color);
+}
+.popular__title{
+    font-size: var(--h3-font-size);
+    margin-bottom: 0.75rem;
+}
+.popular__descraption{
+    font-size: var(--small-font-size);
 }
