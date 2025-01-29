@@ -14,7 +14,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
 <!-- Boxicons CSS  -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
+<!-- Swiper CSS  local -->
+    <link rel="stylesheet" href="/swiper-bundle.min.css">
+<!-- Swiper CSS  CDN -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"> -->
+    
 </head>
 <body>
     <header class="header" id="header">
@@ -132,9 +136,9 @@
         <span class="section__subtitle">Best Choise</span>
         <h2 class="section__title">Popular Residences <span>.</span> </h2>
 
-        <div class="popular__container">
-            <div>
-                <article  class="popular__card" >
+        <div class="popular__container swiper">
+            <div class="swiper-wrapper">
+                <article  class="popular__card swiper-slide" >
                     <img src="/image/popular1.jpg" alt="">
                     <div class="popular__content">
                         <h2 class="popular__price">
@@ -147,7 +151,7 @@
                     </div>
                 </article>
 
-                <article  class="popular__card" >
+                <article  class="popular__card swiper-slide" >
                     <img src="/image/popular2.jpg" alt="">
                     <div class="popular__content">
                         <h2 class="popular__price">
@@ -160,7 +164,7 @@
                     </div>
                 </article>
                 
-                <article  class="popular__card" >
+                <article  class="popular__card swiper-slide" >
                     <img src="/image/popular1.jpg" alt="">
                     <div class="popular__content">
                         <h2 class="popular__price">
@@ -173,7 +177,7 @@
                     </div>
                 </article>
 
-                <article  class="popular__card" >
+                <article  class="popular__card swiper-slide" >
                     <img src="/image/popular3.jpg" alt="">
                     <div class="popular__content">
                         <h2 class="popular__price">
@@ -186,7 +190,7 @@
                     </div>
                 </article>
 
-                <article  class="popular__card" >
+                <article  class="popular__card swiper-slide" >
                     <img src="/image/popular5.jpg" alt="">
                     <div class="popular__content">
                         <h2 class="popular__price">
@@ -198,14 +202,28 @@
                         </p>
                     </div>
                 </article>
+            </div>
 
+            <div class="swiper-button-next">
+                <i class='bx bx-chevron-right'></i>
+            </div>
+            <div class="swiper-button-prev">
+                <i class='bx bx-chevron-left'></i>
             </div>
         </div>
     </div>
-
+    
 </section>
 
+<!-- Swiper -->
+
+<!-- swiper js -->
+<script src="/swiper-bundle.min.js"></script>       
+<!-- swiper js CDN -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+
+<!-- MAIN JS  -->
     <script src="/main.js"></script>
-    <!-- MAIN JS  -->
+
 </body>
 </html>
