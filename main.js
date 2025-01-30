@@ -22,3 +22,36 @@ var swiperPopular = new Swiper(".popular__container", {
         prevEl: ".swiper-button-prev",  // زر التمرير للخلف
     },
 });
+
+// =========== Value===============
+
+const accordionItems = document.querySelectorAll('.value__accordion-item'); // تحديد جميع العناصر التي تطابق "الفئة " داخل الصفحة
+
+accordionItems.forEach((item)=>{
+    const accordionHeader = item.querySelector('.value__accordion-header');
+
+    accordionHeader.addEventListener('click', ()=>{
+
+        const openItem = document.querySelector('.accordion-open')
+
+        toggleItem(item)
+
+        if(openItem && openItem !== item){
+            toggleItem(openItem)
+        }
+    })
+})
+
+const toggleItem = (item)=>{
+    const accordionContent = item.querySelector('.value__accordion-content');
+    
+    if(item.classList.contains('accordion-open')){
+        accordionContent.removeAttribute('style')
+        item.classList.remove('accordion-open')
+    }
+    else{
+        accordionContent.style.height = accordionContent.scrollHeight + 'px';
+        item.classList.add('accordion-open')
+
+    }
+}
