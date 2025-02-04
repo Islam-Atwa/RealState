@@ -175,6 +175,15 @@ h1, h2, h3{
     color: var(--first-color);
 }
 
+
+.active-link{
+    color: #fff;
+    background: linear-gradient(101deg, 
+        hsl(228, 66%, 50%),
+        hsl(228, 66%, 47%));
+        box-shadow: 0px 4px 8px hsla(228, 66%, 45%, .25);
+}
+
 .nav__lago i{
     font-size: 1rem;
 }
@@ -723,6 +732,7 @@ h1, h2, h3{
     display: flex;
     column-gap: 1rem;
 }
+
 .footer__social-link{
     font-size: 1.25rem;
     color: var(--text-color);
@@ -756,3 +766,4 @@ h1, h2, h3{
     justify-content: center;
     column-gap: 1.25rem;
 }
+
