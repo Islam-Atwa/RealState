@@ -429,13 +429,17 @@
     }
 }
 
+
 @media screen and (min-width: 1040px){
     .container{
-        margin-left: auto;  margin-right: auto;
-    }
+        margin-left: auto;
+        margin-right: auto;
+    } 
 
     .home__container{
-        column-gap: 4rem;
+        padding: 0;
+        margin: 5rem 3rem;
+        column-gap: 15rem
     }
 }
 
