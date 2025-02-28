@@ -633,7 +633,7 @@ h1, h2, h3{
 
 .contact__card-button:hover{
     background-color: var(--first-color);
-    color: #fff;
+    color: #fFFf;
 }
 .contact__card-box:hover{
     box-shadow: 0 8px 24px hsl(228, 66%, 45%, .1);
