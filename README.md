@@ -9,4 +9,3 @@ A Real Estate website showcasing properties with a modern and attractive design.
   ## <h1 width="500px" >Mobil Screen </h1>
   <img src ="https://github.com/Islam-Atwa/RealState/blob/main/image/mobil%20screen.png">
 </div>
-ي,
