@@ -160,3 +160,4 @@ sr.reveal('.footer') // Footer Section
 sr.reveal('.footer__info', {delay:500}) // Footer Section
 
 
+
