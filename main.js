@@ -126,4 +126,37 @@ themeButton.addEventListener('click', ()=>{
 
     localStorage.setItem('selected-theme', getCurrentTheme());
     localStorage.setItem('selected-icon', getCurrentIcon());
-})
+});
+
+
+// =========== Scroll Reveal Animation ===========//
+const sr = ScrollReveal(
+    {
+        origin:'top', // top, bottom, left, right الاتجاهات
+        distance: '60px', // الحركة : تحديد مسافة الحركة التي سيتحركها العنصر
+        duration:2500, // المدة : تحدد مدة تأثير الظهور
+        delay:400, // تأخير
+        // reset:true
+    }
+)
+// Home Section
+sr.reveal('.home__title')
+sr.reveal('.home_descraption', {delay:500})
+sr.reveal('.home__search', {delay:600})
+sr.reveal('.home__value', {delay:700})
+sr.reveal('.home__images', {delay:800, origin:'bottom'})
+
+// Partners Section
+sr.reveal('.logos__img', {interval:100})
+
+sr.reveal('.popular') // Swiper Section
+
+// Value Section AND Contact Section
+sr.reveal('.value__images, .contact__content', {origin:'left'})
+sr.reveal('.value__content, .contact__images', {origin:'right'})
+
+sr.reveal('.subscribe' ) // Subscribe Section
+sr.reveal('.footer') // Footer Section
+sr.reveal('.footer__info', {delay:500}) // Footer Section
+
+
